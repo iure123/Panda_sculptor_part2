@@ -1,0 +1,51 @@
+\doxysection{sculptor.\+h}
+\hypertarget{sculptor_8h_source}{}\label{sculptor_8h_source}\index{Sculptor2/sculptor.h@{Sculptor2/sculptor.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SCULPTOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SCULPTOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_voxel}{Voxel}}\ \{}
+\DoxyCodeLine{00006\ \ \ \textcolor{keywordtype}{float}\ r,g,b;\ \textcolor{comment}{//\ Cores}}
+\DoxyCodeLine{00007\ \ \ \textcolor{keywordtype}{float}\ a;\ \ \ \ \textcolor{comment}{//\ Transparencia}}
+\DoxyCodeLine{00008\ \ \ \textcolor{keywordtype}{bool}\ isOn;\ \textcolor{comment}{//\ Ativou\ ou\ não}}
+\DoxyCodeLine{00009\ \};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sculptor}{Sculptor}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \mbox{\hyperlink{struct_voxel}{Voxel}}\ ***v;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{int}\ nx;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ ny;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ nz;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{float}\ r;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{float}\ g;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{float}\ b;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{float}\ a;}
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \mbox{\hyperlink{class_sculptor}{Sculptor}}(\textcolor{keywordtype}{int}\ \_nx,\ \textcolor{keywordtype}{int}\ \_ny,\ \textcolor{keywordtype}{int}\ \_nz);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \mbox{\hyperlink{class_sculptor}{\string~Sculptor}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \textcolor{keywordtype}{void}\ setColor(\textcolor{keywordtype}{float}\ r,\ \textcolor{keywordtype}{float}\ g,\ \textcolor{keywordtype}{float}\ b,\ \textcolor{keywordtype}{float}\ alpha);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \textcolor{keywordtype}{void}\ putVoxel(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ z);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \textcolor{keywordtype}{void}\ cutVoxel(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ z);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \textcolor{keywordtype}{void}\ writeOFF(\textcolor{keywordtype}{char}*\ filename);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SCULPTOR\_H}}
+
+\end{DoxyCode}
